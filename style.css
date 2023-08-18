@@ -24,17 +24,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-
-  font-family: "DM Sans";
-  font-size: 16px;
+  font-family: 'DM Sans';
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 183%;
-  letter-spacing: 0.64px;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.48px;
   border-radius: 24px;
   background: #fff;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-  padding: 40px;
+  padding: 40px 32px;
 }
 .location-info-title {
   width: 75.103px;
@@ -58,8 +57,8 @@ body {
   flex-direction: column;
 }
 .location-card-title-description {
-  width: 288px;
-  height: 50px;
+  width: 208px;
+height: 36px;
   color: #907e82;
 }
 .location-card-schedule {
@@ -80,7 +79,6 @@ body {
   align-items: center;
   padding-top: 61px;
   gap: 10px;
-
 }
 
 .modal-btns .button {
@@ -90,6 +88,8 @@ body {
   font-size: 16px;
   /* padding: 20px; */
   border-radius: 22px;
+  border: none;
+  cursor: pointer;
 }
 
 .modal-btns .our-location-btn {
@@ -104,4 +104,50 @@ body {
   background-color: #fff;
   border-color: #fff;
   color: #d41443;
+}
+.modal-btns .franchise-btn:hover {
+  background-color: #ecebeb;
+}
+
+@media screen and (min-width: 768px) {
+  .location-card-info {
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.56px;
+    padding: 40px 32px;
+  }
+  .modal-btns {
+    display: flex;
+    flex-direction: row;
+  }
+  .location-card-info .location-card-title-description {
+    width: 159px;
+    height: 65px;
+    font-size: 14px;
+    line-height: 166%; /* 23.24px */
+    letter-spacing: 0.56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .location-card-info {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 183%;
+    letter-spacing: 0.64px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+  }
+
+  .location-card-info .location-card-title-description{
+    width: 243px;
+height: 50px;
+  }
+  .location-card-info:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
 }
