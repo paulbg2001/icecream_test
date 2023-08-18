@@ -6,15 +6,31 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+}
+
 .location-cards {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .location-card-info {
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 183%;
+  letter-spacing: 0.64px;
   border-radius: 24px;
   background: #fff;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
@@ -31,13 +47,61 @@
   color: #fff;
   text-transform: uppercase;
 }
-.title1{
+.title1 {
   width: 138px;
-height: 28px;
-background: #C2E297;
+  height: 28px;
+  background: #c2e297;
 }
 
-.location-card-info-contact{
+.location-card-info-contact {
   display: flex;
   flex-direction: column;
+}
+.location-card-title-description {
+  width: 288px;
+  height: 50px;
+  color: #907e82;
+}
+.location-card-schedule {
+  color: #ffa5ba;
+}
+.location-card-info-contact a {
+  color: #907e82;
+}
+.location-card-info-contact a:hover {
+  color: #d41443;
+}
+
+/* Modal Btns */
+.modal-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 61px;
+  gap: 10px;
+
+}
+
+.modal-btns .button {
+  color: #fff;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  /* padding: 20px; */
+  border-radius: 22px;
+}
+
+.modal-btns .our-location-btn {
+  width: 198px;
+  height: 44px;
+  background-color: #d41443;
+  border-color: #d41443;
+}
+.modal-btns .franchise-btn {
+  width: 168px;
+  height: 44px;
+  background-color: #fff;
+  border-color: #fff;
+  color: #d41443;
 }
