@@ -11,27 +11,31 @@ body {
 }
 
 /* Products section */
-.products{
+.products {
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.products-title{
+.products-title {
   display: flex;
   flex-direction: column;
   gap: 15px;
-text-align: center;
-font-family: 'Titan One';
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
+  text-align: center;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
-.products-title h2{
-  color: #FFA5BA;
+.products-title h2 {
+  color: #ffa5ba;
   font-size: 18px;
 }
-.products-title h1{
-  color: #D41443;
+.products-title h1 {
+  color: #d41443;
   font-size: 34px;
   letter-spacing: 1.36px;
 }
@@ -39,8 +43,8 @@ text-transform: uppercase;
 .products-card {
   width: 280px;
   height: 629px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -75,28 +79,32 @@ text-transform: uppercase;
   align-items: center;
   gap: 32px;
   color: #fff;
-text-align: center;
-font-family: 'Titan One';
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.8px;
+  text-align: center;
+  font-family: "Titan One";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.products-card-details-content h2{
+  font-size: 20px;
 }
 .products-card-details-content p {
   width: 216px;
   height: 124px;
   text-align: center;
   text-align: center;
-font-family: 'DM Sans';
-font-size: 14px;
-font-weight: 700;
-line-height: 152%; /* 21.28px */
-letter-spacing: 0.56px;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 152%; /* 21.28px */
+  letter-spacing: 0.56px;
 }
 .products-card-details-content button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 /* Contact section */
 .location-cards {
@@ -220,6 +228,41 @@ letter-spacing: 0.56px;
 }
 
 @media screen and (min-width: 768px) {
+  .products-title h2 {
+    color: #ffa5ba;
+    font-size: 26px;
+  }
+  .products-title h1 {
+    color: #d41443;
+    font-size: 48px;
+    letter-spacing: 1.92px;
+  }
+  .products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .products-card {
+    width: 224px;
+    height: 611px;
+  }
+  .products-card-details {
+    width: 224px;
+    height: 473px;
+  }
+  .products-card .icecream-img {
+    width: 224px;
+    height: 224px;
+  }
+  .products-card-details-content h2{
+    font-size: 20px;
+    letter-spacing: 0.8px;
+  }
+  .products-card-details-content p{
+    font-size: 14px;
+    letter-spacing: 0.8px;
+  }
+
   .location-cards {
     display: flex;
     flex-direction: row;
@@ -265,6 +308,40 @@ letter-spacing: 0.56px;
 }
 
 @media screen and (min-width: 1200px) {
+  .products-title h2 {
+    color: #ffa5ba;
+    font-size: 30px;
+  }
+  .products-title h1 {
+    color: #d41443;
+    font-size: 58px;
+    letter-spacing: 3.48px;
+  }
+  .products-card {
+    width: 368px;
+    height: 796px;
+  }
+  .products-card-details {
+    width: 368px;
+    height: 535px;
+  }
+  .products-card .icecream-img {
+    width: 368px;
+    height: 394px;
+  }
+  .products-card-details-content h2{
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
+  .products-card-details-content p {
+    width: 304px;
+    height: 134px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 176%; /* 28.16px */
+    letter-spacing: 0.64px;
+  }
+
   .location-card-info {
     font-family: "DM Sans";
     font-size: 16px;
