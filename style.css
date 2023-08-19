@@ -14,6 +14,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-content: space-around;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 32px;
   padding-left: 16px;
@@ -24,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -34,6 +36,7 @@ body {
   background: #fff;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   padding: 40px 32px;
+  
 }
 .location-info-title {
   width: 75.103px;
@@ -45,6 +48,25 @@ body {
   background-color: #f0d1a5;
   color: #fff;
   text-transform: uppercase;
+  animation: animate30 2000ms infinite 10ms;
+  /* box-shadow: 11px 10px 12px -3px rgba(212, 20, 0, 0.72); */
+}
+@keyframes animate30 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .title1 {
   width: 138px;
@@ -58,7 +80,7 @@ body {
 }
 .location-card-title-description {
   width: 208px;
-height: 36px;
+  height: 36px;
   color: #907e82;
 }
 .location-card-schedule {
@@ -110,6 +132,10 @@ height: 36px;
 }
 
 @media screen and (min-width: 768px) {
+  .location-cards{
+    display: flex;
+    flex-direction: row;
+  }
   .location-card-info {
     font-size: 14px;
     line-height: 186%;
@@ -127,6 +153,27 @@ height: 36px;
     line-height: 166%; /* 23.24px */
     letter-spacing: 0.56px;
   }
+  .location-info-title {
+    animation: animate30 4000ms infinite 5ms;
+    /* box-shadow: 11px 10px 12px -3px rgba(212, 20, 0, 0.72); */
+  }
+  @keyframes animate30 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-15deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -141,13 +188,32 @@ height: 36px;
     padding: 40px;
   }
 
-  .location-card-info .location-card-title-description{
+  .location-card-info .location-card-title-description {
     width: 243px;
-height: 50px;
+    height: 50px;
   }
-  .location-card-info:hover{
+  /* @keyframes animate30 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-15deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  } */
+
+  .location-card-info:hover {
     transform: scale(1.2);
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      /* animation: animate30 2000ms infinite 10ms; */
   }
 }
