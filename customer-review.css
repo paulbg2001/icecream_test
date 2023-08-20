@@ -1,0 +1,47 @@
+.customer-review{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer-review-text-block {
+    position: relative;
+  width: 968px;
+  height: 138px;
+  background-color: #fafafa;
+}
+.customer-review-text-block p{
+    position: absolute;
+    top: 47px;
+    left: 110px;
+    width: 750px;
+    margin-bottom: 8px;
+height: 52px;
+text-align: center;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 186%; /* 29.76px */
+letter-spacing: 0.64px;
+}
+.customer-review-text-block .first-line{
+    width: 821px;
+    position: absolute;
+    top: 79px;
+    left: 74px;
+    stroke-width: 1px;
+}
+.customer-review-text-block .second-line{
+    width: 821px;
+position: absolute;
+top: 109px;
+left: 74px;
+stroke-width: 1px;
+}
+.customer-review-text-block svg{
+    position: relative;
+    top: 46px;
+    left: 73px;
+}
